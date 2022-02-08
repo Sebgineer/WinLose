@@ -1,0 +1,12 @@
+.player {
+    min-width: 100px;
+}
+
+.player p {
+    margin: 5px;
+}
+
+.player h1 {
+    font-size: 20px;
+    margin: 5px;
+}

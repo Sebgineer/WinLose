@@ -1,0 +1,5 @@
+<button routerLink="/newplayer" >New Player</button>
+list
+<app-plist (PlayerSelected)="AddPlayerToPool($event)" [players]="players"></app-plist>
+pool
+<app-plist (PlayerSelected)="RemovePlayerFromPool($event)" [players]="playerSelectedPool"></app-plist>

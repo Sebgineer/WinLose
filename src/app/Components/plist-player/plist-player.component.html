@@ -1,0 +1,6 @@
+<div (click)="PlayerClicked($event)" class="player">
+    <h1>{{player.name}}</h1>
+    <p>{{player.playerName}}</p>
+    <p>W{{player.win}} | L{{player.lose}}</p>
+    <p>{{player.win | procent: player.lose}}% Win Rate</p>
+</div>

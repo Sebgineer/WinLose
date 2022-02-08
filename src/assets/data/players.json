@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Marcus",
+        "playerName": "Nobodynood",
+        "win": 7,
+        "lose": 4
+    },
+    {
+        "name": "Sebastian",
+        "playerName": "Mythical Midget",
+        "win": 3,
+        "lose": 8
+    },
+    {
+        "name": "Patrick",
+        "playerName": "Prexton",
+        "win": 6,
+        "lose": 5
+    }
+]
