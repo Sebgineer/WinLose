@@ -22,7 +22,7 @@ export class ManagerComponent implements OnInit {
     this.playerServies.GetPlayers().subscribe((data: IPlayer[]) => {
       next: this.players = data;
       console.log(this.players);
-      fail: console.log("Fail to load players");
+      error: console.log("Fail to load players");
     });
   }
 

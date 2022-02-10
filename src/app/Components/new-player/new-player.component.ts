@@ -16,7 +16,7 @@ export class NewPlayerComponent implements OnInit {
   }
 
   onCreate() : void {
-    this.route.navigate(["/"]);
+    this.playerService.CreatePlayer("kage", "kage");
+    //this.route.navigate(["/"]);
   }
-
 }
