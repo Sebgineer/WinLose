@@ -21,26 +21,22 @@ export class PlayerService {
     let bool = true;
     this.GetPlayers().subscribe((data: IPlayer[]) => {
       next: {
-        this.players = data,
-        console.log(data);
-        
+        this.players = data,        
         this.players.forEach(player => {
           if (player.playerName == username) {
             bool = false;
           }
         });
-
         let newPlayer: IPlayer = {name: name, playerName: username, win: 0, lose: 0}
         this.players.push(newPlayer);
-        
-        this.httpClient.post(this.path, {
-          "name": "kage",
-          "username": "kagemand",
-          "win": 0,
-          "lose": 0
-        });
+        this.httpClient.post<IPlayer>(this.path,
+          {
+            name: name,
+            playerName: username,
+            win: 0,
+            lose: 0
+          });
         console.log(this.players);
-        
       }
       error: (err: Error) => {
         console.error("Fail to load content");

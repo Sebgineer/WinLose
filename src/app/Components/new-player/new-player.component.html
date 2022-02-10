@@ -1,7 +1,5 @@
 <button routerLink="/">Front site</button>
 
-<form action="">
-    <input placeholder="Name" type="text">
-    <input placeholder="GamerTag" type="text">
-</form>
-<button (click)="onCreate()" type="submit" value="Create">Create</button>
+<input [(ngModel)]="name" placeholder="Name" type="text" required>
+<input [(ngModel)]="playerName" placeholder="GamerTag" type="text" required>
+<input (click)="onCreate()" type="submit" value="Create">

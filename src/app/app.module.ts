@@ -14,6 +14,7 @@ import { TeamListComponent } from './Components/team-list/team-list.component';
 import { PlayerPoolComponent } from './Components/player-pool/player-pool.component';
 import { TeamControllerComponent } from './Components/team-controller/team-controller.component';
 import { NewPlayerComponent } from './Components/new-player/new-player.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 export const routes: Routes = [
   { path: '', component: ManagerComponent },
@@ -37,6 +38,8 @@ export const routes: Routes = [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
     RouterModule.forRoot(routes)
   ],
   exports: [
